@@ -33,7 +33,7 @@ class StocksPortfolioMalformedListFragment : FragmentBase() {
             it?.data?.let { stocks->
                 setupViews(stocks)
             }?: kotlin.run {
-                showNoStocksText(binding.noStocks,binding.stocksFullListRV)
+                showNoStocksText(binding.noStocks,binding.stocksFullListRV,"Stocks input Malformed!")
             }
         }
     }
