@@ -1,23 +1,17 @@
 package com.example.stocksportfolioappkotlin.stocksPortfolio.ui
 
 import android.os.Bundle
-import android.text.TextUtils.replace
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.stocksportfolioappkotlin.Fragmentbase
+import com.example.stocksportfolioappkotlin.FragmentBase
 import com.example.stocksportfolioappkotlin.databinding.FragmentStocksPortfolioFullListBinding
 import com.example.stocksportfolioappkotlin.stocksPortfolio.model.responseModels.Stock
 import com.example.stocksportfolioappkotlin.stocksPortfolio.viewmodel.PortfolioViewModel
-import io.reactivex.internal.disposables.DisposableHelper.replace
 
 
-class StocksPortfolioEmptyListFragment : Fragmentbase() {
+class StocksPortfolioEmptyListFragment : FragmentBase() {
     private lateinit var binding: FragmentStocksPortfolioFullListBinding
     private val portfolioViewModel: PortfolioViewModel by viewModels()
 
